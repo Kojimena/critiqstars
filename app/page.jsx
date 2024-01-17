@@ -5,7 +5,7 @@ import Stats from '@/components/Stats/Stats'
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between bg-black">
-       <section id='/' className="w-full px-10 lg:px-20 xs:my-20">
+       <section id='/' className="w-full px-10 lg:px-20 xs:mt-36 sm:mt-40">
         <div className="flex flex-col lg:flex-row items-center justify-center w-full min-h-screen">
             <div className="flex flex-col items-center justify-center lg:w-1/2">
               <Tittle title={"Comprar reseñas de Google"} color={"#fff"} />

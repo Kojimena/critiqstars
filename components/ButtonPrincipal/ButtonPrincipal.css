@@ -1,5 +1,4 @@
 .button-principal {
-    font-size: 1rem;
     padding: 10px 20px;
     background-color: #000;
     border: 3px solid #d69de5;
@@ -8,9 +7,10 @@
     font-weight: bolder;
     transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
     box-shadow: -5px 5px 0px 0px #d69de5;
-    font-family: "grifter", sans-serif;
+    font-family: "pricedown", sans-serif;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
   }
   
   .button-principal:hover {

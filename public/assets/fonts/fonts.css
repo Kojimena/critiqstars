@@ -8,3 +8,8 @@
     src: url('./pricedown.otf') format('opentype');
 }
 
+@font-face {
+    font-family: "outfit";
+    src: url('./outfit.ttf') format('truetype');
+}
+

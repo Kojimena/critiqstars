@@ -30,6 +30,7 @@ module.exports = {
         inter: ['inter', 'sans-serif'],
         grifter: ['grifter', 'sans-serif'],
         pricedown: ['pricedown', 'sans-serif'],
+        outfit: ['outfit', 'sans-serif'],
       },
       colors: {
         "purplelight": "#d69de5",
