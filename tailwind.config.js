@@ -29,6 +29,7 @@ module.exports = {
         satoshi: ['Satoshi', 'sans-serif'],
         inter: ['inter', 'sans-serif'],
         grifter: ['grifter', 'sans-serif'],
+        pricedown: ['pricedown', 'sans-serif'],
       },
       colors: {
         "purplelight": "#d69de5",

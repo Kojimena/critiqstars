@@ -1,7 +1,7 @@
 "use client";
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, Bars3BottomRightIcon } from '@heroicons/react/24/outline'
 import { Link } from "react-scroll"
 import ButtonPrincipal from '../ButtonPrincipal/ButtonPrincipal'
 
@@ -31,7 +31,8 @@ const NavBar = () => {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
               onClick={() => setMobileMenuOpen(true)}
             >
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3BottomRightIcon className="h-6 w-6" aria-hidden="true" />
+              
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-6 items-center">
