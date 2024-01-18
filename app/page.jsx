@@ -2,7 +2,15 @@ import Image from 'next/image'
 import Tittle from '@/components/Tittle/Tittle'
 import Subtitle from '@/components/Subtitle/Subtitle'
 import Stats from '@/components/Stats/Stats'
+import LogoClouds from '@/components/LogoClouds/LogoClouds'
+
 export default function Home() {
+  const logos = [
+    "/assets/images/logos/google.png",
+    "/assets/images/logos/chrome.png",
+    "/assets/images/logos/maps.png",
+  ]
+
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between bg-black">
        <section id='/' className="w-full px-10 lg:px-20 xs:mt-36 sm:mt-40">
@@ -24,6 +32,7 @@ export default function Home() {
               />
             </div>
         </div>
+        <LogoClouds logos={logos} />
       </section>
     </main>
   )
