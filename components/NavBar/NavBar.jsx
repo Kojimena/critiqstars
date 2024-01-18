@@ -20,7 +20,7 @@ const NavBar = () => {
           <div className="flex lg:mr-12 lg:flex-none md:flex-1">
             <a href="#" className="-m-1.5 p-0">
               <img
-                className="h-28 w-auto"
+                className="h-32 w-auto"
                 src="/assets/images/logo.png"
                 alt=""
               />
