@@ -3,9 +3,16 @@ import Tittle from '@/components/Tittle/Tittle'
 import Subtitle from '@/components/Subtitle/Subtitle'
 import Stats from '@/components/Stats/Stats'
 import LogoClouds from '@/components/LogoClouds/LogoClouds'
+import Prices from '@/components/Prices/Prices'
 
 export default function Home() {
   const logos = [
+    "/assets/images/logos/google.png",
+    "/assets/images/logos/chrome.png",
+    "/assets/images/logos/maps.png",
+    "/assets/images/logos/google.png",
+    "/assets/images/logos/chrome.png",
+    "/assets/images/logos/maps.png",
     "/assets/images/logos/google.png",
     "/assets/images/logos/chrome.png",
     "/assets/images/logos/maps.png",
@@ -25,7 +32,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-center lg:w-1/2">
               <Image
-                src="/assets/images/home2.png"
+                src="/assets/images/home.png"
                 alt="Picture of reviews"
                 width={500}
                 height={500}
@@ -33,6 +40,9 @@ export default function Home() {
             </div>
         </div>
         <LogoClouds logos={logos} />
+      </section>
+      <section id='/services' className="w-full px-10 lg:px-20">
+        <Prices />
       </section>
     </main>
   )
