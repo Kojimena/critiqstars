@@ -14,7 +14,7 @@ const LogoClouds = ({logos}) => {
                     key={logo}
                     src={logo}
                     alt=""
-                    className=" h-20 object-contain"
+                    className=" h-16 object-contain"
                 />
                 ))
             }
