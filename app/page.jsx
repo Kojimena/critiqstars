@@ -4,6 +4,7 @@ import Subtitle from '@/components/Subtitle/Subtitle'
 import Stats from '@/components/Stats/Stats'
 import LogoClouds from '@/components/LogoClouds/LogoClouds'
 import Prices from '@/components/Prices/Prices'
+import services from '@/services'
 
 export default function Home() {
   const logos = [
@@ -17,6 +18,7 @@ export default function Home() {
     "/assets/images/logos/chrome.png",
     "/assets/images/logos/maps.png",
   ]
+
 
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between bg-black">
@@ -40,6 +42,19 @@ export default function Home() {
             </div>
         </div>
         <LogoClouds logos={logos} />
+      </section>
+      <section id='/services' className="w-full px-10 lg:px-20">
+      <Tittle title={"Servicios"} color={"#fff"} center/>
+      <div className='flex flex-col lg:flex-row w-full justify-center py-10'>
+          {
+            services.map((service) => (
+              <div className='flex flex-col items-center justify-start gap-y-8 p-4 w-full h-42' key={service.id}>
+                {service.icon}
+                <Subtitle text={service.tittle} color={"#fff"} center/>
+              </div>
+            ))
+          }
+      </div>
       </section>
       <section id='/services' className="w-full px-10 lg:px-20">
         <Prices />
