@@ -19,6 +19,39 @@ export default function Home() {
     "/assets/images/logos/maps.png",
   ]
 
+  const packages = [
+    {
+      id: 1,
+      name: "Iniciación",
+      price: "150",
+      text: "30 valoraciones",
+    },
+    {
+      id: 2,
+      name: "Paquete 1",
+      price: "350",
+      text: "70 valoraciones",
+    },
+    {
+      id: 3,
+      name: "Paquete 2",
+      price: "550",
+      text: "150 valoraciones sin comentarios ni fotos",
+    },
+    {
+      id: 4,
+      name: "Paquete 3",
+      price: "650",
+      text: "200 valoraciones sin comentarios ni fotos",
+    },
+    {
+      id: 5,
+      name: "Paquete 4",
+      price: "750",
+      text: "250 valoraciones sin comentarios ni fotos",
+    }
+  ]
+
 
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between bg-black">
@@ -57,7 +90,19 @@ export default function Home() {
       </div>
       </section>
       <section id='/services' className="w-full px-10 lg:px-20">
-        <Prices />
+        <Tittle title={"Paquetes"} color={"#fff"} center/>
+        <div className="flex items-center justify-center mt-20 pb-10">
+          <div className="isolate mx-auto grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          {
+            packages.map((pack) => (
+              <Prices key={pack.id} name={pack.name} price={pack.price} text={pack.text} />
+            ))
+          }
+          </div>
+        </div>
+      </section>
+      <section id='/us' className="w-full px-10 lg:px-20">
+        <Tittle title={"Sobre nosotros"} color={"#fff"} center/>
       </section>
     </main>
   )
