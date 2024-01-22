@@ -5,6 +5,8 @@ import Stats from '@/components/Stats/Stats'
 import LogoClouds from '@/components/LogoClouds/LogoClouds'
 import Prices from '@/components/Prices/Prices'
 import services from '@/services'
+import { RiInstagramFill, RiLinkedinBoxFill } from 'react-icons/ri'
+
 
 export default function Home() {
   const logos = [
@@ -55,7 +57,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between bg-black">
-       <section id='/' className="w-full px-10 lg:px-20 xs:mt-36 sm:mt-40">
+       <section id='/' className="w-full px-10 lg:px-20 xs:mt-48 sm:mt-40">
         <div className="flex flex-col lg:flex-row lg:items-start items-center justify-start w-full max-h-screen">
             <div className="flex flex-col items-center justify-center lg:w-1/2">
               <Tittle title={"Posiciónate en Google Maps"} color={"#fff"} />
@@ -78,10 +80,10 @@ export default function Home() {
       </section>
       <section id='/services' className="w-full px-10 lg:px-20">
       <Tittle title={"Servicios"} color={"#fff"} center/>
-      <div className='flex flex-col lg:flex-row w-full justify-center py-10'>
+      <div className='flex flex-col lg:flex-row w-full justify-center py-10 '>
           {
             services.map((service) => (
-              <div className='flex flex-col items-center justify-start gap-y-8 p-4 w-full h-42' key={service.id}>
+              <div className='flex flex-col items-center justify-start gap-y-8 p-4 w-full h-42 purpleshadow m-2' key={service.id}>
                 {service.icon}
                 <Subtitle text={service.tittle} color={"#fff"} center/>
               </div>
@@ -89,7 +91,7 @@ export default function Home() {
           }
       </div>
       </section>
-      <section id='/services' className="w-full px-10 lg:px-20">
+      <section id='/packages' className="w-full px-10 lg:px-20">
         <Tittle title={"Paquetes"} color={"#fff"} center/>
         <div className="flex items-center justify-center mt-20 pb-10">
           <div className="isolate mx-auto grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-5">
@@ -103,7 +105,39 @@ export default function Home() {
       </section>
       <section id='/us' className="w-full px-10 lg:px-20">
         <Tittle title={"Sobre nosotros"} color={"#fff"} center/>
+        <div className='flex flex-col  w-full justify-center'>
+          <div className='flex flex-col lg:flex-row items-center justify-between gap-x-4  w-full'>
+            <div className='flex flex-col lg:items-start lg:justify-start lg:w-1/2 lg:h-96'>
+              <Tittle title={"Misión"} color={"#d69de5"} />
+              <Subtitle text={"Somos una empresa especializada en el campo del marketing digital, centrada en la estrategia de optimización de la presencia de nuestros clientes en Google Maps."} color={"#fff"} />
+            </div>
+            <div className='flex flex-col lg:items-start lg:justify-start lg:w-1/2 lg:h-96'>
+              <Tittle title={"Visión"} color={"#d69de5"} />
+              <Subtitle text={"Liderar la revolución en el marketing digital mediante el uso estratégico de Google Maps.Queremos transformar la percepción actual, ayudando a las empresas a posicionarse con fuerza en el mercado y atraer a clientes potenciales de manera innovadora."} color={"#fff"} />
+            </div>
+          </div>
+          <Tittle title={"Experiencia"} color={"#d69de5"} />
+          <Subtitle text={`
+            Nuestra trayectoria se ha ido tejiendo con historias de éxito. Durante años hemos forjado relaciones sólidas con destacadas empresas españolas, impulsando su posicionamiento en Google Maps.
+            Estamos comprometidos con las 5 estrellas, nuestra experiencia respalda nuestra capacidad para conseguirlo e impulsar el éxito de nuestros clientes a través de Google Maps. `} color={"#fff"} />
+          <div className='flex  items-center justify-start gap-x-4 w-full py-4'>
+            <RiInstagramFill size={40} color={"#9634c5"} />
+            <RiLinkedinBoxFill size={40} color={"#9634c5"} />
+          </div>
+        </div>
       </section>
+      <section id='/function' className="w-full px-10 lg:px-20">
+        <div className='flex flex-col items-center justify-center w-full'>
+          <Tittle title={"¿Por qué enfocarnos en google maps?"} color={"#fff"} center/>
+          <Image src="/assets/images/funcionamiento.png" alt="funcionamiento" width={600} height={600} className='rounded-md'/>
+        </div>
+      </section>
+      <section id='/contact' className="w-full px-10 lg:px-20">
+        <div className='flex flex-col items-center justify-center w-full'>
+          <Tittle title={"Contacto"} color={"#fff"} center/>
+        </div>
+      </section>
+
     </main>
   )
 }

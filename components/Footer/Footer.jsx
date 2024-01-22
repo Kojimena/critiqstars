@@ -10,7 +10,7 @@ const Footer = () => {
                 <li className="font-grifter text-white text-sm">Términos y condiciones</li>
                 <li className="font-grifter text-white text-sm">Política de privacidad</li>
             </ul>
-            <div className="flex justify-center items-center p-8">
+            <div className="flex justify-center items-center">
             <Image
                 src="/assets/images/logo.png"
                 alt="logo"
