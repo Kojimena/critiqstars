@@ -107,11 +107,11 @@ export default function Home() {
         <Tittle title={"Sobre nosotros"} color={"#fff"} center/>
         <div className='flex flex-col  w-full justify-center'>
           <div className='flex flex-col lg:flex-row items-center justify-between gap-x-4  w-full'>
-            <div className='flex flex-col lg:items-start lg:justify-start lg:w-1/2 lg:h-96'>
+            <div className='flex flex-col lg:items-start lg:justify-start lg:w-1/2 lg:h-96 mt-4 lg:m-0'>
               <Tittle title={"Misión"} color={"#d69de5"} />
               <Subtitle text={"Somos una empresa especializada en el campo del marketing digital, centrada en la estrategia de optimización de la presencia de nuestros clientes en Google Maps."} color={"#fff"} />
             </div>
-            <div className='flex flex-col lg:items-start lg:justify-start lg:w-1/2 lg:h-96'>
+            <div className='flex flex-col lg:items-start lg:justify-start lg:w-1/2 lg:h-96 my-4 lg:m-0'>
               <Tittle title={"Visión"} color={"#d69de5"} />
               <Subtitle text={"Liderar la revolución en el marketing digital mediante el uso estratégico de Google Maps.Queremos transformar la percepción actual, ayudando a las empresas a posicionarse con fuerza en el mercado y atraer a clientes potenciales de manera innovadora."} color={"#fff"} />
             </div>
