@@ -6,6 +6,7 @@ import LogoClouds from '@/components/LogoClouds/LogoClouds'
 import Prices from '@/components/Prices/Prices'
 import services from '@/services'
 import { RiInstagramFill, RiLinkedinBoxFill } from 'react-icons/ri'
+import ServiceItem from '@/components/ServiceItem/ServiceItem'
 
 
 export default function Home() {
@@ -83,10 +84,7 @@ export default function Home() {
       <div className='flex flex-col lg:flex-row w-full justify-center py-10 '>
           {
             services.map((service) => (
-              <div className='flex flex-col items-center justify-start gap-y-8 p-4 w-full h-42 purpleshadow m-2' key={service.id}>
-                {service.icon}
-                <Subtitle text={service.tittle} color={"#fff"} center/>
-              </div>
+              <ServiceItem key={service.id} service={service} />
             ))
           }
       </div>
@@ -126,7 +124,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id='/function' className="w-full px-10 lg:px-20">
+      <section id='/functioning' className="w-full px-10 lg:px-20">
         <div className='flex flex-col items-center justify-center w-full'>
           <Tittle title={"¿Por qué enfocarnos en google maps?"} color={"#fff"} center/>
           <Image src="/assets/images/funcionamiento.png" alt="funcionamiento" width={600} height={600} className='rounded-md'/>
