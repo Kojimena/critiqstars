@@ -3,7 +3,7 @@ import { Cog8ToothIcon, PresentationChartBarIcon, ArchiveBoxIcon } from '@heroic
 const services = [
     {
         id: 1,
-        tittle:  "CONFIGURACIÓN+POSICIONAMIENTO EN GOOGLE MAPS",
+        tittle:  "CONFIGURACIÓN + POSICIONAMIENTO EN GOOGLE MAPS",
         icon: "/assets/images/1.png", 
         description:`
         Ideal para negocios que aún no cuentan con una cuenta registrada en Google Maps.`,

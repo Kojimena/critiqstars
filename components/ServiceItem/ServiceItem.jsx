@@ -12,7 +12,7 @@ const ServiceItem = ({service}) => {
   
     return (
       <div 
-        className='flex flex-col items-center justify-start gap-y-4 p-4 w-full cursor-pointer  purpleshadow m-2' 
+        className='flex flex-col items-center justify-start gap-y-4 p-8 w-full cursor-pointer  purpleshadow m-2' 
         key={service.id}
         onClick={toggleDescription}
       >
