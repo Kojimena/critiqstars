@@ -42,7 +42,9 @@ const NavBar = () => {
                   {item.name}
                 </Link>
             ))}
+            <Link to='/contact' spy={true} smooth={true} duration={500} className="tracking-wide text-xl font-bold leading-6 text-white cursor-pointer hover:text-purplelight font-pricedown uppercase">
             <ButtonPrincipal text="Contactar" />
+            </Link>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>

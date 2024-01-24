@@ -8,6 +8,7 @@ import services from '@/services'
 import { RiInstagramFill, RiLinkedinBoxFill } from 'react-icons/ri'
 import ServiceItem from '@/components/ServiceItem/ServiceItem'
 import Carousel from '@/components/Carousel/Carousel'
+import ContactItem from '@/components/ContactItem/ContactItem'
 
 
 export default function Home() {
@@ -78,7 +79,7 @@ export default function Home() {
                 <Stats number={"83.8%"} description={"es la participación de Google en el mercado de motores de búsqueda"} />
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center lg:w-1/2">
+            <div className="flex flex-col items-center justify-center lg:w-1/2 hover:animate-pulse">
               <Image
                 src="/assets/images/home.png"
                 alt="Picture of reviews"
@@ -144,6 +145,7 @@ export default function Home() {
       <section id='/contact' className="w-full px-10 lg:px-20">
         <div className='flex flex-col items-center justify-center w-full'>
           <Tittle title={"Contacto"} color={"#fff"} center/>
+          <ContactItem name={"Nomade global talent"} number={"+34 685 69 34 61"} mail={"gerencia@nomadeglobaltalent.com "}/>
         </div>
       </section>
 

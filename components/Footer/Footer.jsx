@@ -1,26 +1,29 @@
 import React from 'react'
 import Image from 'next/image'
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoInstagram, IoLogoLinkedin} from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-black text-white h-64 flex flex-col justify-center items-center gap-4 py-8">
-        <div className="flex flex-col w-full">
-            <ul className="flex flex-col md:flex-row justify-evenly items-center gap-4 py-4">
-                <a href="https://kojimena.com/"><li className="font-grifter text-white text-sm">© 2023</li></a>
-                <li className="font-grifter text-white text-sm">Términos y condiciones</li>
-                <li className="font-grifter text-white text-sm">Política de privacidad</li>
-            </ul>
-            <div className="flex justify-center items-center">
-            <Image
+    <footer className="footer footer-center p-10 bg-black">
+    <aside>
+    <Image
                 src="/assets/images/logo.png"
                 alt="logo"
                 width={100}
                 height={100}
                 className='object-cover'
             />
-            </div>
-        </div>
-    </div>
+      <a href="https://kojimena.com/"><p className='text-white'>Copyright © 2024 - All right reserved</p></a>
+    </aside> 
+    <nav>
+      <div className="grid grid-flow-col gap-4">
+            <a href={`https://www.facebook.com/people/Nomade-Anuncios/pfbid02JGro95bUgKPtEJG6WMA3uxpZVv7bTSZkE5288iyPvKVkAUnU2qP1CWfxfkBRxqpsl/?mibextid=ZbWKwL`} className=" cursor-pointer font-inter rounded-md px-4 lg:px-8 text-sm font-semibold text-white" ><FaFacebook className="text-purpleultralight text-2xl" /></a>
+            <a href={`https://www.instagram.com/nomadeglobaltalent/?hl=es`} className=" cursor-pointer font-inter rounded-md px-4 lg:px-8 text-sm font-semibold text-white" ><IoLogoInstagram className="text-purpleultralight text-2xl" /></a>
+            <a href={`https://www.linkedin.com/company/nomade-globaltalent/about/`} className=" cursor-pointer font-inter rounded-md px-4 lg:px-8 text-sm font-semibold text-white" ><IoLogoLinkedin className="text-purpleultralight text-2xl" /></a>
+      </div>
+    </nav>
+  </footer>
   )
 }
 
