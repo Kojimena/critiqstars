@@ -15,6 +15,8 @@ const ServiceItem = ({service}) => {
         className='flex flex-col items-center justify-start gap-y-4 p-8 w-full cursor-pointer  purpleshadow m-2' 
         key={service.id}
         onClick={toggleDescription}
+        onMouseEnter={toggleDescription}
+        onMouseLeave={toggleDescription}
       >
         <h1 className='text-purpleultralight lg:text-xl text-lg font-bold text-center'>{service.tittle}</h1>
         {showDescription ?

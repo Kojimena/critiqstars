@@ -9,6 +9,8 @@ import { RiInstagramFill, RiLinkedinBoxFill } from 'react-icons/ri'
 import ServiceItem from '@/components/ServiceItem/ServiceItem'
 import Carousel from '@/components/Carousel/Carousel'
 import ContactItem from '@/components/ContactItem/ContactItem'
+import Timeline from '@/components/Timeline/Timeline'
+import ImgText from '@/components/ImgText/ImgText'
 
 
 export default function Home() {
@@ -115,33 +117,34 @@ export default function Home() {
       <section id='/us' className="w-full px-10 lg:px-20">
         <Tittle title={"Sobre nosotros"} color={"#fff"} center/>
         <div className='flex flex-col gap-8  w-full justify-center mt-8'>
-          <div className='flex flex-col lg:flex-row items-center justify-between gap-8  w-full'>
-            <div className='flex flex-col lg:items-start lg:justify-start w-full lg:w-1/2 lg:h-80 gap-4 '>
-              <Tittle title={"Misión"} color={"#d69de5"} />
-              <Subtitle text={"Somos una empresa especializada en el campo del marketing digital, centrada en la estrategia de optimización de la presencia de nuestros clientes en Google Maps."} color={"#fff"} />
-            </div>
-            <div className='flex flex-col lg:items-start lg:justify-start w-full lg:w-1/2 lg:h-80 gap-4'>
-              <Tittle title={"Visión"} color={"#d69de5"} />
-              <Subtitle text={"Liderar la revolución en el marketing digital mediante el uso estratégico de Google Maps.Queremos transformar la percepción actual, ayudando a las empresas a posicionarse con fuerza en el mercado y atraer a clientes potenciales de manera innovadora."} color={"#fff"} />
-            </div>
-          </div>
-          <div className='flex flex-col lg:items-start lg:justify-start w-full lg:h-80 gap-4'>
-              <Tittle title={"Experiencia"} color={"#d69de5"} />
-              <Subtitle text={`
+            <ImgText title={"Misión"} 
+              subtitle={"Somos una empresa especializada en el campo del marketing digital, centrada en la estrategia de optimización de la presencia de nuestros clientes en Google Maps."} 
+              imgsrc={"/assets/images/mission.png"} />
+            <ImgText reverse title={"Visión"} 
+              subtitle={"Liderar la revolución en el marketing digital mediante el uso estratégico de Google Maps.Queremos transformar la percepción actual, ayudando a las empresas a posicionarse con fuerza en el mercado y atraer a clientes potenciales de manera innovadora."} 
+              imgsrc={"/assets/images/vision.png"}
+              />
+            <ImgText title={"Experiencia"} 
+              subtitle={`
                 Nuestra trayectoria se ha ido tejiendo con historias de éxito. Durante años hemos forjado relaciones sólidas con destacadas empresas españolas, impulsando su posicionamiento en Google Maps.
-                Estamos comprometidos con las 5 estrellas, nuestra experiencia respalda nuestra capacidad para conseguirlo e impulsar el éxito de nuestros clientes a través de Google Maps. `} color={"#fff"} />
-                <div className='flex  items-center justify-start gap-x-4 w-full py-4'>
-                  <RiInstagramFill size={40} color={"#fff"} />
-                  <RiLinkedinBoxFill size={40} color={"#fff"} />
-                </div>
-          </div>
+                Estamos comprometidos con las 5 estrellas, nuestra experiencia respalda nuestra capacidad para conseguirlo e impulsar el éxito de nuestros clientes a través de Google Maps. `} 
+                imgsrc={"/assets/images/experience.png"}
+                />
+            <div className='flex  items-center justify-start gap-x-4 w-full py-4'>
+              <RiInstagramFill size={40} color={"#fff"} />
+              <RiLinkedinBoxFill size={40} color={"#fff"} />
+            </div>
           <Carousel images={about} />
         </div>
       </section>
       <section id='/functioning' className="w-full px-10 lg:px-20">
         <div className='flex flex-col items-center justify-center w-full'>
-          <Tittle title={"¿Por qué enfocarnos en google maps?"} color={"#fff"} center/>
-          <Image src="/assets/images/funcionamiento.png" alt="funcionamiento" width={600} height={600} className='rounded-md'/>
+          <Tittle title={"Funcionamiento"} color={"#fff"} center/>
+          <div className='flex flex-col lg:flex-row items-center justify-between gap-8  w-full'>
+            <Timeline />
+            <Image src="/assets/images/functioning.png" alt="Picture of the author" width={500} height={500} />
+          </div>
+
         </div>
       </section>
       <section id='/contact' className="w-full px-10 lg:px-20">

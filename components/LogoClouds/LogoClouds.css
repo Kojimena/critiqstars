@@ -13,10 +13,10 @@
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 940px) {
     .marquee {
-        animation: scroll var(--duration, 18s) linear var(--delay, 0s) var(--iteration-count, infinite);
+        animation: scroll var(--duration, 10s) linear var(--delay, 0s) var(--iteration-count, infinite);
         animation-play-state: var(--play, running);
         animation-delay: var(--delay, 0s);
         animation-direction: var(--direction, normal);
@@ -35,10 +35,10 @@
 
     @keyframes scroll {
         0% {
-            transform: translateX(100%);
+            transform: translateX(0%);
         }
         100% {
-            transform: translateX(-100%);
+            transform: translateX(-200%);
         }
     }
 }
