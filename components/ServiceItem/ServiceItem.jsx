@@ -14,7 +14,6 @@ const ServiceItem = ({service}) => {
       <div 
         className='flex flex-col items-center justify-start gap-y-4 p-8 w-full cursor-pointer  purpleshadow m-2' 
         key={service.id}
-        onClick={toggleDescription}
         onMouseEnter={toggleDescription}
         onMouseLeave={toggleDescription}
       >
