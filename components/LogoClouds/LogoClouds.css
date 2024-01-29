@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 940px) {
     .marquee {
-        animation: scroll var(--duration, 10s) linear var(--delay, 0s) var(--iteration-count, infinite);
+        animation: scroll var(--duration, 20s) linear var(--delay, 0s) var(--iteration-count, infinite);
         animation-play-state: var(--play, running);
         animation-delay: var(--delay, 0s);
         animation-direction: var(--direction, normal);
@@ -38,7 +38,7 @@
             transform: translateX(0%);
         }
         100% {
-            transform: translateX(-200%);
+            transform: translateX(-300%);
         }
     }
 }
