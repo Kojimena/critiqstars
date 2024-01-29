@@ -1,21 +1,44 @@
 "use client";
 import React from 'react'
-import Subtitle from '../Subtitle/Subtitle'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const ServiceItem = ({service}) => {
-    const [showDescription, setShowDescription] = useState(false)
-  
-    const toggleDescription = () => {
-      setShowDescription(!showDescription)
+  const [showDescription, setShowDescription] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile('ontouchstart' in window || navigator.maxTouchPoints > 0);
+  }, []);
+
+  const toggleDescription = () => {
+    setShowDescription(!showDescription);
+  };
+
+  const handleMouseEnter = () => {
+    if (!isMobile) {
+      setShowDescription(true);
     }
+  };
+
+  const handleMouseLeave = () => {
+    if (!isMobile) {
+      setShowDescription(false);
+    }
+  };
+
+  const handleClick = () => {
+    if (isMobile) {
+      toggleDescription();
+    }
+  };
   
     return (
       <div 
         className='flex flex-col items-center justify-start gap-y-4 p-8 w-full cursor-pointer  purpleshadow m-2' 
         key={service.id}
-        onMouseEnter={toggleDescription}
-        onMouseLeave={toggleDescription}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onClick={handleClick}
       >
         <h1 className='text-purpleultralight lg:text-xl text-lg font-bold text-center'>{service.tittle}</h1>
         {showDescription ?
