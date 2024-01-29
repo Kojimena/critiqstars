@@ -6,7 +6,7 @@ const Prices = ({text, price,name, image }) => {
                 <div className="flex items-center justify-between gap-x-4">
                     <h3 id="tier-standard" className="text-purplelight text-2xl font-semibold leading-8 font-pricedown">{name}</h3>
                 </div>
-                <img className="w-full mx-auto" src={image} alt="" />
+                <img className="py-6 w-60 h-60 mx-auto object-contain" src={image} alt="Paquete 1" />
 
                 <p className="mt-6 flex items-center gap-x-1 ">
                     <span className="text-5xl font-bold tracking-tight text-white text-center font-inter">{price}€</span>
