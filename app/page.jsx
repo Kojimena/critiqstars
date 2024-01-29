@@ -11,6 +11,7 @@ import Carousel from '@/components/Carousel/Carousel'
 import ContactItem from '@/components/ContactItem/ContactItem'
 import Timeline from '@/components/Timeline/Timeline'
 import ImgText from '@/components/ImgText/ImgText'
+import WhatsAppButton from '@/components/WhatsAppButton/WhatsAppButton'
 
 
 export default function Home() {
@@ -32,30 +33,35 @@ export default function Home() {
       name: "Iniciación",
       price: "150",
       text: "30 valoraciones",
+      image : "/assets/images/boxes/1.png"
     },
     {
       id: 2,
       name: "Paquete 1",
       price: "350",
       text: "70 valoraciones",
+      image : "/assets/images/boxes/2.png"
     },
     {
       id: 3,
       name: "Paquete 2",
       price: "550",
-      text: "150 valoraciones sin comentarios ni fotos",
+      text: "150 valoraciones",
+      image : "/assets/images/boxes/3.png"
     },
     {
       id: 4,
       name: "Paquete 3",
       price: "650",
-      text: "200 valoraciones sin comentarios ni fotos",
+      text: "200 valoraciones",
+      image : "/assets/images/boxes/4.png"
     },
     {
       id: 5,
       name: "Paquete 4",
       price: "750",
-      text: "250 valoraciones sin comentarios ni fotos",
+      text: "250 valoraciones",
+      image : "/assets/images/boxes/5.png"
     }
   ]
 
@@ -108,7 +114,7 @@ export default function Home() {
           <div className="isolate mx-auto grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-5">
           {
             packages.map((pack) => (
-              <Prices key={pack.id} name={pack.name} price={pack.price} text={pack.text} />
+              <Prices key={pack.id} name={pack.name} price={pack.price} text={pack.text} image={pack.image} />
             ))
           }
           </div>
@@ -150,9 +156,11 @@ export default function Home() {
       <section id='/contact' className="w-full px-10 lg:px-20">
         <div className='flex flex-col items-center justify-center w-full'>
           <Tittle title={"Contacto"} color={"#fff"} center/>
-          <ContactItem name={"Nomade global talent"} number={"+34 685 69 34 61"} mail={"gerencia@nomadeglobaltalent.com "}/>
+          <ContactItem name={"Nomade global talent"} number={"https://wa.me/34685693461"} mail={"gerencia@nomadeglobaltalent.com "}/>
         </div>
       </section>
+      <WhatsAppButton />
+
 
     </main>
   )

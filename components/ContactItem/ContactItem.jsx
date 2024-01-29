@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaPhoneAlt } from "react-icons/fa";
-import { IoMdMailOpen, IoIosContacts, IoLogoInstagram, IoLogoLinkedin} from "react-icons/io";
+import { IoMdMailOpen, IoIosContacts, IoLogoInstagram, IoLogoLinkedin, IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 
 
@@ -11,8 +11,8 @@ const ContactItem = ({name, number, mail, img}) => {
         <div className="flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center justify-between gap-8">
                     <div className="w-full flex flex-row items-start justify-start purpleshadow p-2 hover:animate-bounce">
-                        <FaPhoneAlt className="text-purpleultralight text-2xl" />
-                        <a href={`tel:${number}`} className=" cursor-pointer font-inter rounded-md px-4 lg:px-8 text-sm font-semibold text-white" >{number}</a>
+                        <IoLogoWhatsapp className="text-purpleultralight text-2xl" />
+                        <a href={number} className=" cursor-pointer font-inter rounded-md px-4 lg:px-8 text-sm font-semibold text-white" >Enviar mensaje</a>
                     </div>
                     <div className="w-full flex flex-row items-start justify-start purpleshadow p-2 hover:animate-bounce">
                         <IoMdMailOpen className="text-purpleultralight text-2xl" />
