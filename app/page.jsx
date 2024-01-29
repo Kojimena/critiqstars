@@ -77,6 +77,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between bg-black">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
        <section id='/' className="w-full px-10 lg:px-20 xs:mt-48 sm:mt-40">
         <div className="flex flex-col lg:flex-row lg:items-start items-center justify-start w-full max-h-screen">
             <div className="flex flex-col items-center justify-center lg:w-1/2">
