@@ -69,9 +69,10 @@ export default function Home() {
     "/assets/images/about1.png",
     "/assets/images/about2.png",
     "/assets/images/about3.png",
-    "/assets/images/about1.png",
-    "/assets/images/about2.png",
-    "/assets/images/about3.png",
+    "/assets/images/about4.png",
+    "/assets/images/about5.png",
+    "/assets/images/about6.png",
+    "/assets/images/about7.png",
   ]
 
 

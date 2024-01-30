@@ -75,7 +75,10 @@ const NavBar = () => {
                       {item.name}
                     </Link>
                   ))}
-                  <ButtonPrincipal text="Contactar" />
+                  <Link to='/contact' spy={true} smooth={true} duration={500} onClick={() => setMobileMenuOpen(false)} className="-mx-3 uppercase block text-xl px-3 py-4 text-base font-semibold leading-7 tracking-wide text-white font-pricedown tracking-wide cursor-pointer">
+                    <ButtonPrincipal text="Contactar" />
+                  </Link>
+                  
                 </div>
               </div>
             </div>
