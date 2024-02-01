@@ -59,7 +59,11 @@ const ServiceItem = ({service}) => {
             </ul>
         </div>
          : 
-        <img className='w-60 h-60' src={service.icon} alt={service.tittle} />}
+         <div className='flex flex-col items-center justify-center gap-y-4'>
+          <img className='w-60 h-60' src={service.icon} alt={service.tittle} />
+          <p className='text-gray text-sm md:hidden '>haz click para desplegar la información</p>
+        </div>
+        }
       </div>
     )
   }

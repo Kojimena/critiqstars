@@ -29,39 +29,39 @@ export default function Home() {
 
   const packages = [
     {
-      id: 1,
+      id: 0,
       name: "Iniciación",
+      price: "51",
+      text: "10 valoraciones",
+      image : "/assets/images/boxes/0.png"
+    },
+    {
+      id: 1,
+      name: "Paquete 1",
       price: "150",
       text: "30 valoraciones",
       image : "/assets/images/boxes/1.png"
     },
     {
       id: 2,
-      name: "Paquete 1",
+      name: "Paquete 2",
       price: "350",
       text: "70 valoraciones",
       image : "/assets/images/boxes/2.png"
     },
     {
       id: 3,
-      name: "Paquete 2",
+      name: "Paquete 3",
       price: "550",
       text: "150 valoraciones",
       image : "/assets/images/boxes/3.png"
     },
     {
       id: 4,
-      name: "Paquete 3",
+      name: "Paquete 4",
       price: "650",
       text: "200 valoraciones",
       image : "/assets/images/boxes/4.png"
-    },
-    {
-      id: 5,
-      name: "Paquete 4",
-      price: "750",
-      text: "250 valoraciones",
-      image : "/assets/images/boxes/5.png"
     }
   ]
 
@@ -87,8 +87,8 @@ export default function Home() {
               <Tittle title={"Posiciónate en Google Maps"} color={"#fff"} />
               <Subtitle text={"Buenas valoraciones atraerán a más clientes a tu negocio y conseguirás quitarle clientes a tu competencia."} color={"#fff"} />
               <div className="flex flex-row items-center justify-start gap-x-4 py-8 w-full">
-                <Stats number={"93%"} description={"de los consumidores escogen negocios con una nota superior a 4 puntos en google."} />
-                <Stats number={"83.8%"} description={"es la participación de Google en el mercado de motores de búsqueda"} />
+                <Stats number={"93%"} description={"de los consumidores escogen negocios con una nota superior a 4 puntos en Google."} />
+                <Stats number={"83.8%"} description={"es la participación de Google en el mercado de motores de búsqueda."} />
               </div>
             </div>
             <div className="flex flex-col items-center justify-center lg:w-1/2 hover:animate-pulse">
@@ -131,7 +131,7 @@ export default function Home() {
               subtitle={"Somos una empresa especializada en el campo del marketing digital, centrada en la estrategia de optimización de la presencia de nuestros clientes en Google Maps."} 
               imgsrc={"/assets/images/mission.png"} />
             <ImgText reverse title={"Visión"} 
-              subtitle={"Liderar la revolución en el marketing digital mediante el uso estratégico de Google Maps.Queremos transformar la percepción actual, ayudando a las empresas a posicionarse con fuerza en el mercado y atraer a clientes potenciales de manera innovadora."} 
+              subtitle={"Liderar la revolución en el marketing digital mediante el uso estratégico de Google Maps. Queremos transformar la percepción actual, ayudando a las empresas a posicionarse con fuerza en el mercado y atraer a clientes potenciales de manera innovadora."} 
               imgsrc={"/assets/images/vision.png"}
               />
             <ImgText title={"Experiencia"} 
@@ -141,8 +141,9 @@ export default function Home() {
                 imgsrc={"/assets/images/experience.png"}
                 />
             <div className='flex  items-center justify-start gap-x-4 w-full py-4'>
-              <RiInstagramFill size={40} color={"#fff"} />
-              <RiLinkedinBoxFill size={40} color={"#fff"} />
+              <a href="https://www.linkedin.com/company/critiq-stars/" target="_blank" rel="noreferrer">
+                <RiLinkedinBoxFill size={40} className='hover:text-purplelight text-white cursor-pointer' />
+              </a>
             </div>
           <Carousel images={about} />
         </div>
@@ -157,11 +158,11 @@ export default function Home() {
           <div className='flex flex-col lg:flex-row items-center justify-center w-full pt-10'>
             <div className='flex flex-col items-start justify-start lg:w-1/2 lg:h-96 p-2'>
               <Tittle title={"¿Cómo lo hacemos?"} color={"#d763e9"} />
-              <Subtitle text={"Todas las reseñas son de personas 100% reales que yo pago para que te ponga la reseña desde su cuenta personal. Todas son cuentas y nombres de habla Hispana y alta actividad."} color={"#fff"} />
+              <Subtitle text={"Todas las reseñas son de personas 100% reales y se hacen desde cuentas personales con nombres de usuario de habla hispana y alta actividad."} color={"#fff"} />
             </div>
             <div className='flex flex-col items-start justify-start lg:w-1/2 lg:h-96 p-2'>
               <Tittle title={"Servicio que utilizamos"} color={"#d763e9"} />
-              <Subtitle text={"Rating trust, consiste en buscar a gente que conoce el negocio y pedirles su opinión. Si es positiva, les pedimos que la pongan en Google Maps a cambio de una pequeña recompensa. Si es negativa no se lo pedimos y simplemente le damos las gracias por su aportación."} color={"#fff"} />
+              <Subtitle text={"Rating Trust: consiste en buscar a gente que conoce el negocio y pedirles su opinión. Si es positiva, les pedimos que la pongan en Google Maps a cambio de una pequeña recompensa. Si es negativa no se lo pedimos y simplemente le damos las gracias por su aportación."} color={"#fff"} />
             </div>
           </div>
 
@@ -170,7 +171,7 @@ export default function Home() {
       <section id='/contact' className="w-full px-10 lg:px-20">
         <div className='flex flex-col items-center justify-center w-full'>
           <Tittle title={"Contacto"} color={"#fff"} center/>
-          <ContactItem name={"Nomade global talent"} number={"https://wa.me/34685693461"} mail={"gerencia@nomadeglobaltalent.com "}/>
+          <ContactItem name={"Nomade global talent"} number={"https://wa.me/34685693461"} mail={"Gerencia@critiqstars.com"}/>
         </div>
       </section>
       <WhatsAppButton />

@@ -1,4 +1,3 @@
-import { Cog8ToothIcon, PresentationChartBarIcon, ArchiveBoxIcon } from '@heroicons/react/24/outline'
 
 const services = [
     {
@@ -21,7 +20,7 @@ const services = [
     },
     {
         id: 2,
-        tittle:  "COMUNITY MANAGER PARA GOOGLE MAPS",
+        tittle:  "COMMUNITY MANAGER PARA GOOGLE MAPS",
         icon: "/assets/images/2.png",
         description:`Ideal para negocios que ya cuentan con una cuenta registrada en GoogleMaps.`,
         includes:[
