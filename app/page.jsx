@@ -154,6 +154,16 @@ export default function Home() {
             <Timeline />
             <Image src="/assets/images/functioning.png" alt="Picture of the author" width={500} height={500} />
           </div>
+          <div className='flex flex-col lg:flex-row items-center justify-center w-full pt-10'>
+            <div className='flex flex-col items-start justify-start lg:w-1/2 lg:h-96 p-2'>
+              <Tittle title={"¿Cómo lo hacemos?"} color={"#d763e9"} />
+              <Subtitle text={"Todas las reseñas son de personas 100% reales que yo pago para que te ponga la reseña desde su cuenta personal. Todas son cuentas y nombres de habla Hispana y alta actividad."} color={"#fff"} />
+            </div>
+            <div className='flex flex-col items-start justify-start lg:w-1/2 lg:h-96 p-2'>
+              <Tittle title={"Servicio que utilizamos"} color={"#d763e9"} />
+              <Subtitle text={"Rating trust, consiste en buscar a gente que conoce el negocio y pedirles su opinión. Si es positiva, les pedimos que la pongan en Google Maps a cambio de una pequeña recompensa. Si es negativa no se lo pedimos y simplemente le damos las gracias por su aportación."} color={"#fff"} />
+            </div>
+          </div>
 
         </div>
       </section>
