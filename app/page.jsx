@@ -84,7 +84,7 @@ export default function Home() {
        <section id='/' className="w-full px-10 lg:px-20 xs:mt-48 sm:mt-40">
         <div className="flex flex-col lg:flex-row lg:items-start items-center justify-start w-full max-h-screen">
             <div className="flex flex-col items-center justify-center lg:w-1/2">
-              <Tittle title={"Posiciónate en Google Maps"} color={"#fff"} />
+              <Tittle title={"Posiciónate en Google Maps"} color={"#fff"} stars/>
               <Subtitle text={"Buenas valoraciones atraerán a más clientes a tu negocio y conseguirás quitarle clientes a tu competencia."} color={"#fff"} />
               <div className="flex flex-row items-start justify-start gap-x-4 py-8 w-full h-60">
                 <Stats number={"93%"} description={"de los consumidores escogen negocios con una nota superior a 4 puntos en Google."} />
@@ -103,7 +103,7 @@ export default function Home() {
         <LogoClouds logos={logos} />
       </section>
       <section id='/services' className="w-full px-10 lg:px-20">
-      <Tittle title={"Servicios"} color={"#fff"} center/>
+      <Tittle title={"Servicios"} color={"#fff"} center stars/>
       <div className='flex flex-col lg:flex-row w-full justify-center py-10 '>
           {
             services.map((service) => (
@@ -113,7 +113,7 @@ export default function Home() {
       </div>
       </section>
       <section id='/packages' className="w-full px-10 lg:px-20">
-        <Tittle title={"Paquetes"} color={"#fff"} center/>
+        <Tittle title={"Paquetes"} color={"#fff"} center stars/>
         <div className="flex items-center justify-center mt-20 pb-10">
           <div className="isolate mx-auto grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-5">
           {
@@ -125,7 +125,7 @@ export default function Home() {
         </div>
       </section>
       <section id='/us' className="w-full px-10 lg:px-20">
-        <Tittle title={"Sobre nosotros"} color={"#fff"} center/>
+        <Tittle title={"Sobre nosotros"} color={"#fff"} center stars/>
         <div className='flex flex-col gap-8  w-full justify-center mt-8'>
             <ImgText title={"Misión"} 
               subtitle={"Somos una empresa especializada en el campo del marketing digital, centrada en la estrategia de optimización de la presencia de nuestros clientes en Google Maps."} 
@@ -170,7 +170,7 @@ export default function Home() {
       </section>
       <section id='/contact' className="w-full px-10 lg:px-20">
         <div className='flex flex-col items-center justify-center w-full'>
-          <Tittle title={"Contacto"} color={"#fff"} center/>
+          <Tittle title={"Contacto"} color={"#fff"} center stars/>
           <ContactItem name={"Nomade global talent"} number={"https://wa.me/34685693461"} mail={"Gerencia@critiqstars.com"}/>
         </div>
       </section>
