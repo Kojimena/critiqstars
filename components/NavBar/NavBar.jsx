@@ -29,7 +29,7 @@ const NavBar = () => {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white border-[1px] border-white rounded-full"
               onClick={() => setMobileMenuOpen(true)}
             >
               <Bars3BottomRightIcon className="h-6 w-6" aria-hidden="true" />
@@ -60,11 +60,11 @@ const NavBar = () => {
               </a>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-white"
+                className="-m-2.5 rounded-md p-2.5 text-white border-[1px] border-white rounded-full"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className="h-6 w-6 " aria-hidden="true" />
               </button>
             </div>
             <div className="mt-6 flow-root">
