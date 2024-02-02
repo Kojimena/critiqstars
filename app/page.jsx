@@ -86,7 +86,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center lg:w-1/2">
               <Tittle title={"Posiciónate en Google Maps"} color={"#fff"} />
               <Subtitle text={"Buenas valoraciones atraerán a más clientes a tu negocio y conseguirás quitarle clientes a tu competencia."} color={"#fff"} />
-              <div className="flex flex-row items-center justify-start gap-x-4 py-8 w-full h-60">
+              <div className="flex flex-row items-start justify-start gap-x-4 py-8 w-full h-60">
                 <Stats number={"93%"} description={"de los consumidores escogen negocios con una nota superior a 4 puntos en Google."} />
                 <Stats number={"83.8%"} description={"es la participación de Google en el mercado de motores de búsqueda."} />
               </div>
