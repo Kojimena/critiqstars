@@ -92,7 +92,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center lg:w-1/2 hover:animate-pulse">
-              <Image
+              <img
                 src="/assets/images/home.png"
                 alt="Picture of reviews"
                 width={500}
