@@ -15,7 +15,7 @@ const RootLayout = ({children}) => {
     <html lang="es">
         <head>
             <title>{metadata.title}</title>
-            <link rel="icon" type="image/png+xml" href="/assets/images/logowhite.png" />
+            <link rel="icon" type="image/png+xml" href="/assets/images/favicon.png" />
             <meta name="description" content={metadata.description} />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta property="og:title" content={metadata.title} />
