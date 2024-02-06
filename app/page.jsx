@@ -153,7 +153,7 @@ export default function Home() {
           <Tittle title={"Funcionamiento"} color={"#fff"} center/>
           <div className='flex flex-col lg:flex-row items-center justify-between gap-8  w-full'>
             <Timeline />
-            <Image src="/assets/images/functioning.png" alt="Picture of the author" width={500} height={500} />
+            <img src="/assets/images/functioning.png" alt="Picture of the author" width={500} height={500} />
           </div>
           <div className='flex flex-col lg:flex-row items-center justify-center w-full py-10 gap-8'>
             <div className='flex flex-col items-start justify-start lg:w-1/2 lg:h-96'>
