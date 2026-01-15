@@ -6,12 +6,10 @@ const Footer = () => {
   return (
     <footer className="footer footer-center p-10 bg-black">
     <aside>
-    <Image
+    <img
                 src="/assets/images/logo.png"
                 alt="logo"
-                width={100}
-                height={100}
-                className='object-cover'
+                className='object-cover h-20'
             />
       <a href="https://kojimena.com/"><p className='text-white'>Copyright © 2024 - All right reserved</p></a>
     </aside> 

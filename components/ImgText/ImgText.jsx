@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Tittle from '../Tittle/Tittle'
 import Subtitle from '../Subtitle/Subtitle'
 
@@ -10,7 +9,7 @@ const ImgText = ({reverse, title, subtitle, imgsrc}) => {
               <Tittle title={title} color={"#d69de5"} />
               <Subtitle text={subtitle} color={"#fff"} />
             </div>
-        <Image src={imgsrc} alt='mission' width={400} height={400} />
+        <img src={imgsrc} alt='mission' className='h-80  object-cover'/>
     </div>
   )
 }
